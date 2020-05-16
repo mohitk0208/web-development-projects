@@ -1,0 +1,25 @@
+body {
+    background-color: aquamarine;
+    /*background-image: linear-gradient(to right,rgb(192, 11, 192),rgb(51, 51, 245));*/
+    background-image: linear-gradient(to right,rgb(147, 147, 245),blue );
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 2%;
+}
+h2 {
+    font-size: 2rem;
+}
+
+li {
+    font-size: 1.5rem;
+}
+.container-fluid {
+    padding: 7% 15%;
+}
+
+.projects {
+    text-align: left;
+}
