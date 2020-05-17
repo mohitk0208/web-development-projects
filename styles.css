@@ -17,9 +17,14 @@ li {
     font-size: 1.5rem;
 }
 .container-fluid {
-    padding: 7% 15%;
+    padding: 7% 10%;
 }
 
 .projects {
     text-align: left;
+}
+
+.project-image {
+    width: 100%;
+    visibility: hidden;
 }
