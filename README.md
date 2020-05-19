@@ -1,1 +1,1 @@
-git web development
+collection of all my practice websites
