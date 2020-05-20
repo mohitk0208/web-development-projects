@@ -1,23 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: aquamarine;
-    /*background-image: linear-gradient(to right,rgb(192, 11, 192),rgb(51, 51, 245));*/
-    background-image: linear-gradient(to right,rgb(147, 147, 245),blue );
+    font-family: "Exo", sans-serif;
+    background: #ccc;
+    color: #0d0d0d;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+h2,h4 {
+    letter-spacing: 0.25rem;
+    margin-bottom: 0.25rem;
+    line-height: 1.25;
+}
+nav {
+    background: #0d0d0d;
+    color: #ccc;
+    margin-bottom: 3rem;
+}
+
+nav .logo {
+    font-size: 1.25rem;
+    margin: 0 auto;
+    height: 6rem;
+    padding-top: 0.4rem;
     text-align: center;
 }
 
-h1 {
-    font-size: 3rem;
-    padding: 2%;
-}
-h2 {
-    font-size: 2rem;
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #ccc;
+    letter-spacing: 0.25rem;
+    margin-right: 1rem;
 }
 
 li {
     font-size: 1.5rem;
 }
+
 .container-fluid {
-    padding: 7% 10%;
+    padding: 6% 10%;
 }
 
 .projects {
@@ -27,4 +57,7 @@ li {
 .project-image {
     width: 100%;
     visibility: hidden;
+    border: 1px solid #0d0d0d;
+    padding: 2px;
+    box-shadow: 10px 10px 5px #888888;
 }

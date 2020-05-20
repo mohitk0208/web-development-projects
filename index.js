@@ -26,7 +26,9 @@ for (var i = 0; i < document.querySelectorAll(".project").length; i++) {
 
         var innerHTML = this.innerHTML;
 
-        showPreview(innerHTML);
+      //--------------CODE TO MAKE IMAGE VISIBLE AND SHOW PREVIEW-----------------------//
+        image.style.visibility = "visible";
+        image.setAttribute("src", "images/"+innerHTML+".png");
 
     });
 }
@@ -40,34 +42,11 @@ for (var i = 0; i < document.querySelectorAll(".project").length; i++) {
 
         removePreview(innerHTML);
 
+
+
     });
 }
 
-
-
-//---------------------------  FUNCTION TO SHOW THE PREVIEW---------------------------//
-
-
-function showPreview(name) {
-    switch (name) {
-        case "Dicee Game":
-            image.style.visibility = "visible";
-            image.setAttribute("src", "images/dicee game.png");
-            break;
-        case "Test-site":
-            image.style.visibility = "visible";
-            image.setAttribute("src", "images/test-site.png");
-            break;
-            case "Drum Kit":
-                image.style.visibility = "visible";
-                image.setAttribute("src", "images/Drum Kit.png");
-                break;
-
-        default:
-            console.log(name);
-            break;
-    }
-}
 
 
 //----------------------------  FUNCTION TO REMOVE PREVIEW --------------------------------//
@@ -76,4 +55,4 @@ function showPreview(name) {
 function removePreview(name) {
 
     image.style.visibility = "hidden";
-} 
+}
