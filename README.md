@@ -1,1 +1,1 @@
-collection of all my practice websites
+collection of my practice websites
