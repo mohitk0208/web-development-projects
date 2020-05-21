@@ -1,0 +1,18 @@
+
+<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="adjust" class="svg-inline--fa fa-adjust fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 54">
+<defs>
+   <radialGradient id="radialgradient1">
+      <stop offset="30%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#0d0d0d"/>    
+   </radialGradient>
+</defs>
+<path fill="url(#radialgradient1)" fill-opacity="0.9"
+                        d= "M 0 27
+                           c 43 36, 89 36 , 150 0 
+                            M 150 27 
+                            c -75 -36, -109 -36, -150 0"
+                           stroke = "#0d0d0d"
+                           >
+                        </path>
+
+</svg>

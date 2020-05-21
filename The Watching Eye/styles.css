@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    background-color: #0d0d0d;
+}
+.container {
+    padding-top: 10%;
+}
+.mouth {
+    display: inline-block;
+    width: 40%;
+}
+.eye {
+    width: 250px;
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    overflow: hidden;
+}
+
+.eye-inside {
+    width: 32px;
+    height: 32px;
+    position:absolute;
+    background-color: black;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.eye-flipped {
+    transform: scaleX(-1);
+}
+#lower {
+    fill: #0d0d0d;
+}
+#lower:hover {
+    fill: #eeeeee;
+}
+#upper {
+    fill:#0d0d0d;
+}
