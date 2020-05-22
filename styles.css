@@ -6,11 +6,35 @@
 
 body {
     font-family: "Exo", sans-serif;
-    background: #ccc;
+    /* background: #ccc; */
+    
+    /*-----------  BACKGROUND ANIMATION----------*/
+
+    background: linear-gradient(135deg,#f72d0a,#f1c9bf,#c4f0d5,#0ead56);
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
+    /*-------------------------------------------*/
     color: #0d0d0d;
     line-height: 1.5;
     font-size: 1rem;
 }
+
+/*------------- GRADIENT ANIMATION ---------------*/
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*---------------------------------------------------*/
 
 h2,h4 {
     letter-spacing: 0.25rem;
