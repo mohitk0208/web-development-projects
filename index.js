@@ -15,8 +15,8 @@ console.log(elementWidth - 1);
 */
 
 
-
-var image = document.querySelector(".project-image");
+var image = $(".project-image");
+image.hide();
 //image.setAttribute("src", "https://picsum.photos/" + elementWidth + "/" + elementHeight);
 
 /**   -------------------  ADDING MOUSEOVER EVENT ON THE PROJECT LINKS----------------- */
@@ -27,32 +27,20 @@ for (var i = 0; i < document.querySelectorAll(".project").length; i++) {
         var innerHTML = this.innerHTML;
 
       //--------------CODE TO MAKE IMAGE VISIBLE AND SHOW PREVIEW-----------------------//
-        image.style.visibility = "visible";
-        image.setAttribute("src", "images/"+innerHTML+".png");
+       // image.css("visibility","visible");
+        image.attr("src", "images/"+innerHTML+".png");
+        image.show()();
 
     });
 }
+
 
 //--------------------------  ADDING MOUSEOUT EVENT ON PROJECT LINKS-------------------//
 
 for (var i = 0; i < document.querySelectorAll(".project").length; i++) {
     document.querySelectorAll(".project")[i].addEventListener("mouseout", function () {
-
-        var innerHTML = this.innerHTML;
-
-        removePreview(innerHTML);
-
-
-
+        image.hide();
     });
 }
 
 
-
-//----------------------------  FUNCTION TO REMOVE PREVIEW --------------------------------//
-
-
-function removePreview(name) {
-
-    image.style.visibility = "hidden";
-}
