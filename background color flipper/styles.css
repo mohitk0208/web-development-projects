@@ -6,10 +6,11 @@
 
 body {
     font-family: "Exo", sans-serif;
-    background: #ccc;
+    background-color: #ccc;
     color: #0d0d0d;
     line-height: 1.5;
     font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 ul {
